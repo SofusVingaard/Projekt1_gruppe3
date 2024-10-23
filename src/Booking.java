@@ -14,10 +14,11 @@ public class Booking {
 
 
         DateTimeFormatter datoIndtast = DateTimeFormatter.ofPattern("dd-MM-yyyy");
-
+        //DateTimeFormatter omformulere localDate til at kunne skrives in som en string
+        //fx i det her format dd-MM-yyyy MM er med stort fordi mm er minutter sp MM er months
         while (true) {
 
-            System.out.println("Indtast dato (dd-mm-yyyy):");
+            System.out.println("Indtast dato (dd-MM-yyyy):");
             String enter = keyboard.nextLine();
 
 
@@ -58,7 +59,7 @@ public class Booking {
 
     boolean gyldigDato(String dato, DateTimeFormatter f) {
         try {
-            LocalDate.parse(dato, f);
+            LocalDate.parse(dato, f); //.parse gør at dato stringen bliver konverteret til LocalDate
             return true;
         } catch (DateTimeParseException e) {
             return false;
