@@ -1,4 +1,5 @@
 import javax.xml.crypto.dsig.keyinfo.KeyName;
+import java.awt.print.Book;
 import java.util.ArrayList;
 import java.util.Scanner;
 
@@ -25,7 +26,11 @@ public class Kunde {
             System.out.println("Velkommen til banken");
             System.out.println("pres 1 for at oprette dig som kunde og book en tid");
             System.out.println("pres 2 for at se dit navn og id: ");
+            System.out.println("pres 3 for at booke en tid");
+
             int bruger=keyboard.nextInt();
+            Booking book = new Booking();
+
             switch (bruger) {
                 case 1: {
                     Kunde a = lavBruger();
@@ -34,6 +39,11 @@ public class Kunde {
                 case 2: {
                     System.out.println("dit navn er: "+name+" "+id); break;
                 }
+                case 3:{
+                    book.booking();
+                    break;
+                }
+
                 case 0: keepGoing=false; break;
             }
 
