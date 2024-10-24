@@ -31,6 +31,7 @@ public class Main {
                     System.out.println("Indtast en booking dag i formatet dd-MM-yyyy");
                     String bookingStr = keyboard.nextLine();
                     nyBook.booking(bookingStr);
+
                     break;
 
                 case 2:
