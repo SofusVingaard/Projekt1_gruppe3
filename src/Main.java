@@ -27,6 +27,10 @@ public class Main {
             switch (tast){
                 case 1:
 
+                case 2:
+
+                case 3:
+
             }
         }
     }
