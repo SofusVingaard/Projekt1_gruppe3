@@ -15,7 +15,7 @@ public class OpretDatoer {
         try (FileWriter fileWriter = new FileWriter(filnavn, true)) {  // Åben filen i append-mode
             LocalDate dagsDato = LocalDate.now();  // Hent dags dato
             LocalTime startTid = LocalTime.of(10, 0);  // Starttidspunkt (10:00)
-            LocalTime slutTid = LocalTime.of(18, 0);   // Sluttidspunkt (18:00)
+            LocalTime slutTid = LocalTime.of(17, 0);   // Sluttidspunkt (18:00)
 
             // Loop gennem de næste 14 dage
             for (int dag = 0; dag < 14; dag++) {
