@@ -10,7 +10,7 @@ public class Booking {
     Scanner keyboard = new Scanner(System.in);
 
 
-    public void booking() {
+    public void booking(String bookingStr) {
 
 
         DateTimeFormatter datoIndtast = DateTimeFormatter.ofPattern("dd-MM-yyyy");
@@ -64,6 +64,19 @@ public class Booking {
         } catch (DateTimeParseException e) {
             return false;
         }
+    }
+
+    public static void main(String[] args) {
+        Scanner keyboard= new Scanner(System.in);
+        Booking nyBook = new Booking();
+
+        System.out.println("Indtast en booking dag i formatet dd-MM-yyyy");
+        String bookingStr = keyboard.nextLine();
+
+        nyBook.booking(bookingStr);
+
+        keyboard.close();
+
     }
 
 }

@@ -1,5 +1,3 @@
-import javax.xml.crypto.dsig.keyinfo.KeyName;
-import java.awt.print.Book;
 import java.util.ArrayList;
 import java.util.Scanner;
 
@@ -40,7 +38,7 @@ public class Kunde {
                     System.out.println("dit navn er: "+name+" "+id); break;
                 }
                 case 3:{
-                    book.booking();
+                    //book.booking();
                     break;
                 }
 

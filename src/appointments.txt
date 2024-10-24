@@ -5,3 +5,15 @@ Booking dato: 02-05-2025
 Booking dato: 12-02-2000
 Feriedag: 25-01-2025
 Feriedag: 24-12-2024
+Feriedag: 22-12-2024
+Feriedag: 11-12-2024
+Feriedag: 02-05-2025
+Booking dato: 11-11-2026
+Booking dato: 10-11-2024
+Booking dato: 11-11-2023
+Booking dato: 11-11-2024
+Booking dato: 11-10-2024
+Booking dato: 01-01-2024
+Booking dato: 02-02-2024
+Booking dato: 03-03-2024
+Booking dato: 02-01-2024

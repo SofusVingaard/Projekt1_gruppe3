@@ -17,7 +17,8 @@ public class Main {
 
             tast = keyboard.nextInt();
 
-            if (tast == 0) {
+
+            if (tast ==0 ) {
                 System.out.println("Tak for i dag");
                 break;
             } else if (tast>=4) {
@@ -26,6 +27,13 @@ public class Main {
             }
             switch (tast){
                 case 1:
+                    Booking nyBook = new Booking();
+                    System.out.println("Indtast en booking dag i formatet dd-MM-yyyy");
+                    String bookingStr = keyboard.nextLine();
+                    nyBook.booking(bookingStr);
+                    break;
+
+                case 2:
 
             }
         }
