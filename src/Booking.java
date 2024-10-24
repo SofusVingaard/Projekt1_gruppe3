@@ -10,7 +10,7 @@ public class Booking {
     Scanner keyboard = new Scanner(System.in);
 
 
-    void booking() {
+    public void booking() {
 
 
         DateTimeFormatter datoIndtast = DateTimeFormatter.ofPattern("dd-MM-yyyy");

@@ -1,3 +1,4 @@
+import java.awt.print.Book;
 import java.sql.SQLOutput;
 import java.util.Scanner;
 
@@ -26,6 +27,19 @@ public class Main {
             }
             switch (tast){
                 case 1:
+                    Booking a1=new Booking(); break;
+
+                case 2:
+                    Fridage ferieTilFil = new Fridage();
+
+                    System.out.print("Indtast feriedag i formatet dd-MM-yyyy: ");
+                    String datoStr = keyboard.nextLine();
+
+                    // Kald metoden for at markere datoen som en feriedag
+                    ferieTilFil.markereFerie(datoStr);
+
+                    keyboard.close();
+
 
             }
         }
