@@ -23,7 +23,7 @@ public class Kunde {
         boolean keepGoing=true;
         while (keepGoing){
             System.out.println();
-            System.out.println("Velkommen til banken");
+            System.out.println("Velkommen til Harry's Salon");
             System.out.println("pres 1 for at oprette dig som kunde og book en tid");
             System.out.println("pres 2 for at se dit navn og id: ");
             System.out.println("pres 3 for at booke en tid");
