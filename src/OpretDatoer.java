@@ -10,6 +10,7 @@ public class OpretDatoer {
     private static final DateTimeFormatter datoFormatter = DateTimeFormatter.ofPattern("dd-MM-yyyy");
     private static final DateTimeFormatter tidsFormatter = DateTimeFormatter.ofPattern("HH:mm");
     private static final String filnavn = "src/appointments.txt";  // Navn på filen
+    private static final String TEKST = "Ledig tid";  // Tekst der tilføjes efter dato og tid
 
     public static void main(String[] args) {
         try (FileWriter fileWriter = new FileWriter(filnavn, true)) {  // Åben filen i append-mode
@@ -24,7 +25,7 @@ public class OpretDatoer {
                 // Loop gennem tidsintervaller mellem 10:00 og 18:00
                 for (LocalTime tid = startTid; tid.isBefore(slutTid.plusHours(1)); tid = tid.plusHours(1)) {
                     String datoTid = dato.format(datoFormatter) + " " + tid.format(tidsFormatter);
-                    fileWriter.write(datoTid + "\n");  // Skriv dato og tid til fil
+                    fileWriter.write(datoTid + " - " + TEKST + "\n" );  // Skriv dato, tid og tekst til fil
                 }
             }
 
