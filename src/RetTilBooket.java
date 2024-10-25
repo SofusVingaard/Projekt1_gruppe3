@@ -82,4 +82,9 @@ public class RetTilBooket {
             System.out.println("Fejl ved læsning eller skrivning af filen: " + e.getMessage());
         }
     }
+
+    public static void main(String[] args) {
+        RetTilBooket.BookEnTid(args);
+    }
+
 }

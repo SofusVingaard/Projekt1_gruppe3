@@ -28,7 +28,10 @@ public class Main {
             switch (tast){
                 case 1:
                     RetTilBooket.BookEnTid(args);
+                    break;
                 case 2:
+                    SletningAfBooking.sletEnTid(args);
+                    break;
 
             }
         }

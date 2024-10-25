@@ -6,7 +6,7 @@ import java.util.List;
 import java.util.Scanner;
 import java.util.stream.Collectors;
 
-public class SletningAfBooking {
+public class TestingAfMain {
     private static final String filnavn = "src/appointments.txt";  // Navn på filen
     private static final String booket = "Booket af";    // Tekst for ledig tid
 
