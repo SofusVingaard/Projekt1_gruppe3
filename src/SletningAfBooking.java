@@ -1,30 +1,49 @@
-import java.time.format.DateTimeFormatter;
+import java.io.*;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Scanner;
 
 public class SletningAfBooking {
-    Scanner keyboard = new Scanner(System.in);
+public static void main(String[] args) {
+    Scanner lineremover = new Scanner(System.in);
+    String filnavn = "src/appointments.txt";
+    String linjefjerner = lineremover.nextLine();
+    Fjernspecifiklinje(filnavn, linjefjerner);
 
-    void bookettid(){
+}
 
-    }
 
-    public static void main(String[] args) {
-        String dato;
-        String tidspunkt;
 
-        DateTimeFormatter tidspunktIndtast = DateTimeFormatter.ofPattern("HH:mm");
+    public static void Fjernspecifiklinje(String filnavn, String linjefjerner) {
+        File linjefjerner2 = new File(filnavn);
+        List<String> linjer = new ArrayList<>();
 
-        DateTimeFormatter datoIndtast = DateTimeFormatter.ofPattern("dd-MM-yyyy");
+        try (BufferedReader bf = new BufferedReader(new FileReader("src/appointments.txt"))) {
+            String currentLine;
+            while ((currentLine = bf.readLine()) != null) ;
+            {
 
-        Scanner slettefunktion = new Scanner(System.in);
-        System.out.println("Skriv den dato du har booket ved dd-mm-yyyy");
-        dato = slettefunktion.nextLine();
-
-        System.out.println("Skriv tidspunkt du har booket");
-        tidspunkt = slettefunktion.nextLine();
-
+                if (currentLine != null && !currentLine.contains((CharSequence) linjefjerner)) {
+                    linjer.add(currentLine);
+                }
+            }
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        try (BufferedWriter bw = new BufferedWriter(new FileWriter("src/appointments.txt"))) {
+            for (String l2 : linjer) {
+                bw.write(l2);
+                bw.newLine();
+            }
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 }
+
+
+
+
 
 
 
