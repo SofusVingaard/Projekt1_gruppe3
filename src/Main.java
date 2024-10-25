@@ -27,13 +27,7 @@ public class Main {
             }
             switch (tast){
                 case 1:
-                    Booking nyBook = new Booking();
-                    System.out.println("Indtast en booking dag i formatet dd-MM-yyyy");
-                    String bookingStr = keyboard.nextLine();
-                    nyBook.booking(bookingStr);
-
-                    break;
-
+                    RetTilBooket.BookEnTid(args);
                 case 2:
 
             }
