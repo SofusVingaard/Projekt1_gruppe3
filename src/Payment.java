@@ -1,8 +1,9 @@
-import java.util.Scanner;
+import java.util.Scanner; //Bruger scannner til at læse brugens input
 
-public class Payment {
+public class Payment { // definerer en public (offentlig) klasse som kaldes Payment
 
-    private static class PaymentTwo {
+    private static class PaymentTwo { // Det bedst den er privat så den ikke kan tilgås af andre, som ikke skal kunne have adgang
+        // Instansvariabler (felter) til at gemme information om betalingen
         private String customerId; //Så kan man holde styr mellem flere kunder
         private double amountPaid; //Hvor meget kunden betaler
         private double change; //tilbagebetalingen
@@ -17,6 +18,9 @@ public class Payment {
         }
 
         //jeg vil nu lave change med en if og else statement
+        // den skal kunne regne ud hvis en kunden betaler med en 500 så skal det tilbagebetales
+        // og hvis den betaler for lidt så skal den skrive det sig ugyldig.
+        //hvis jeg kan så skal den kunne gemme at denne person skylder som en form af kredit
 
         public void calculateChange(double serviceCost) {
             if (amountPaid >= serviceCost) { //hvis det kunden betaler er større eller lige med servicen
@@ -30,20 +34,21 @@ public class Payment {
         }
 
         //getters skal kunne hente værdi
+        //henter kundens id
         public String getCustomerId(){
             return customerId;
         }
-
+        //Hente det betalte beløb
         public double getAmountPaid() {
             return amountPaid;
         }
-
+        //Hente tilbagebetaling hvis der er
         public double getChange() {
             return change;
         }
 
         @Override
-        public String toString() {
+        public String toString() { // dette er bare en præsentation af vores objekt som er PaymentTwo. Vi kombinere instansvariablerne i en String.
             return "Customer ID: " + customerId + ", Amount Paid: " + amountPaid + ", Change: " + change;
 
         }
@@ -89,7 +94,7 @@ public class Payment {
         // vi kan senere hen gøre det til en mail, tele, eller login process, men for nu er det navn
         String customerId = scanner.next();
 
-        System.out.println("Indtast beløb betalt: "); // det vil være i kontant
+        System.out.println("Indtast beløb: "); // det vil være i kontant
         double amountPaid = scanner.nextDouble();
 
         //tid til et payment objekt
@@ -112,7 +117,7 @@ public class Payment {
 
     public static void main(String[] args) {
         Payment payment = new Payment();
-        payment.startService(); //starter det koden op
+        payment.startService(); //starter koden op
     }
 }
 
