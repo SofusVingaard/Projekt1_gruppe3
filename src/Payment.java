@@ -7,6 +7,7 @@ public class Payment { // definerer en public (offentlig) klasse som kaldes Paym
         private String customerId; //Så kan man holde styr mellem flere kunder
         private double amountPaid; //Hvor meget kunden betaler
         private double change; //tilbagebetalingen
+        private double owed; // hvad personen skylder
 
         //Nu har jeg en payment klasse så det tid til en constructor
 
@@ -14,6 +15,7 @@ public class Payment { // definerer en public (offentlig) klasse som kaldes Paym
             this.customerId = customerId;
             this.amountPaid = amountPaid;
             this.change = 0.0; //0kr. er bare en default værdi
+            this.owed = 0.0; // default værdi
 
         }
 
@@ -33,6 +35,15 @@ public class Payment { // definerer en public (offentlig) klasse som kaldes Paym
             }
         }
 
+        public void calculateOwed(double serviceCost) {
+            if (amountPaid < serviceCost) { //hvis det betalte er mindre end servicen så skylder kunden(kredit)
+                owed = serviceCost - amountPaid;
+            }
+            else {
+                owed = 0.0; // ellers er det bare nul
+            }
+        }
+
         //getters skal kunne hente værdi
         //henter kundens id
         public String getCustomerId(){
@@ -46,10 +57,13 @@ public class Payment { // definerer en public (offentlig) klasse som kaldes Paym
         public double getChange() {
             return change;
         }
+        public double getOwed() {
+            return owed;
+        }
 
         @Override
         public String toString() { // dette er bare en præsentation af vores objekt som er PaymentTwo. Vi kombinere instansvariablerne i en String.
-            return "Customer ID: " + customerId + ", Amount Paid: " + amountPaid + ", Change: " + change;
+            return "Customer ID: " + customerId + ", Amount Paid: " + amountPaid + ", Change: " + change + ", Owed: " + owed;
 
         }
     }
@@ -67,7 +81,6 @@ public class Payment { // definerer en public (offentlig) klasse som kaldes Paym
 
         int choice = scanner.nextInt();
         double serviceCost = 0;
-
 
         switch (choice) {
             case 1:
@@ -111,6 +124,13 @@ public class Payment { // definerer en public (offentlig) klasse som kaldes Paym
         }
         else {
             System.out.println("Beløbet er ikke tilstrækkeligt.");
+        }
+
+        if (payment.getOwed() < 0) {
+            System.out.println("Du skylder 0 kr.");
+        }
+        else {
+            System.out.println("Du skylder " + payment.owed + " kr.");
         }
 
     }

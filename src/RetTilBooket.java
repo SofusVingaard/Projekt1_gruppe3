@@ -9,6 +9,12 @@ public class RetTilBooket {
     private static final String filnavn = "src/appointments.txt";  // Navn på filen
     private static final String Ledige = "Ledig tid";    // Tekst for ledig tid
 
+    int klip1 = 200;
+    int klip2 = 250;
+    int klip3 = 400;
+    int klip4 = 500;
+    int klip5 = 100;
+
     public static void BookEnTid(String[] args) {
         try {
             // Læs alle linjer fra filen
@@ -62,8 +68,40 @@ public class RetTilBooket {
             System.out.println("Indtast kundens e-mail:");
             String email = scanner.nextLine();
 
+
+            System.out.println("Vælg en af de følgende");
+            System.out.println("1. Herreklip (200 kr. ) ");
+            System.out.println("2. Herreklip med skæg (250 kr.)");
+            System.out.println("3. Dameklip (400 kr. )");
+            System.out.println("4. Dameklip og hårvask (500 kr. )");
+            System.out.println("5. Børneklip (100 kr. )");
+
+            int choice = scanner.nextInt();
+            double serviceCost = 0;
+
+            switch (choice) {
+                case 1:
+                    serviceCost = 200;
+                    break;
+                case 2:
+                    serviceCost = 250;
+                    break;
+                case 3:
+                    serviceCost = 400;
+                    break;
+                case 4:
+                    serviceCost = 500;
+                    break;
+                case 5:
+                    serviceCost = 100;
+                    break;
+                default:
+                    System.out.println("Ugyldigt");
+                    return;
+            }
+
             // Opret kundedata-strengen
-            String kundedata = "Booket af [" + navn + ", tlf: " + telefon + ", email: " + email + "]";
+            String kundedata = "Booket af [" + navn + ", tlf: " + telefon + ", email: " + email +" "+ serviceCost+" kr]";
 
             // Erstat "Ledig tid" med kundedata i den valgte linje
             String opdateretTid = valgtTid.replace(Ledige, kundedata);
