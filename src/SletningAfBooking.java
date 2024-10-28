@@ -8,7 +8,7 @@ import java.util.stream.Collectors;
 
 public class SletningAfBooking {
     private static final String filnavn = "src/appointments.txt";  // Navn på filen
-    private static final String booket = "Booket";
+    private static final String booket = "Booket af";    // Tekst for ledig tid
 
     public static void sletEnTid( String[] args){
         try {
@@ -34,26 +34,24 @@ public class SletningAfBooking {
 
             System.out.println("Indtast nummeret på den tid, du vil booke:");
             int valg = scanner.nextInt();
-            scanner.nextLine();
+            scanner.nextLine();  // For at håndtere linjeskift efter nextInt()
 
 
+            // Kontroller om valget er gyldigt
             if (valg < 1 || valg > tiderPåDato.size()) {
                 System.out.println("Ugyldigt valg. Afslutter programmet.");
 
                 return;
-
             }
 
             String valgtTid = tiderPåDato.get(valg - 1);
-            String navn="";
-            String telefon="";
-            String email="";
+            String navn=" ";
+            String telefon=" ";
+            String email=" ";
 
             String kundedata = "Ledig tid" +navn+telefon+email;
-            String opdateretTid = valgtTid.replaceAll("Booket af.*", "Ledig tid");
+            String opdateretTid = valgtTid.replace(booket, kundedata);
             linjer.set(linjer.indexOf(valgtTid), opdateretTid);
-
-            System.out.println("Tiden er nu slettet");
 
 
             try (BufferedWriter writer = new BufferedWriter(new FileWriter(filnavn))) {
@@ -65,11 +63,11 @@ public class SletningAfBooking {
 
         } catch (IOException e) {
             throw new RuntimeException(e);
-
         }
+
     }
 
     public static void main(String[] args) {
-        SletningAfBooking.sletEnTid(args);
+        TestingAfMain.sletEnTid(args);
     }
 }

@@ -8,7 +8,7 @@ import java.time.format.DateTimeFormatter;
 import java.util.HashSet;
 import java.util.Set;
 
-public class OpretDatoer {
+public class Testing {
 
     // Datoformat og tidsformat
     private static final DateTimeFormatter datoFormatter = DateTimeFormatter.ofPattern("dd-MM-yyyy");
