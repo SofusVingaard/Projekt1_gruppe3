@@ -1,35 +1,3 @@
-24-10-2024 10:00 - Ledig tid
-24-10-2024 11:00 - Ledig tid
-24-10-2024 12:00 - Ledig tid
-24-10-2024 13:00 - Ledig tid
-24-10-2024 14:00 - Ledig tid
-24-10-2024 15:00 - Ledig tid
-24-10-2024 16:00 - Ledig tid
-24-10-2024 17:00 - Ledig tid
-25-10-2024 10:00 - Ledig tid
-25-10-2024 11:00 - Ledig tid
-25-10-2024 12:00 - Ledig tid
-25-10-2024 13:00 - Ledig tid
-25-10-2024 14:00 - Ledig tid
-25-10-2024 15:00 - Ledig tid
-25-10-2024 16:00 - Ledig tid
-25-10-2024 17:00 - Ledig tid
-26-10-2024 10:00 - Ledig tid
-26-10-2024 11:00 - Booket tid [Hej, tlf: 22, email: adsa]
-26-10-2024 12:00 - Ledig tid
-26-10-2024 13:00 - Ledig tid
-26-10-2024 14:00 - Ledig tid
-26-10-2024 15:00 - Ledig tid
-26-10-2024 16:00 - Ledig tid
-26-10-2024 17:00 - Ledig tid
-27-10-2024 10:00 - Booket tid [Sofus, tlf: 2020202	, email: hej@gmail.com]
-27-10-2024 11:00 - Ledig tid
-27-10-2024 12:00 - Ledig tid
-27-10-2024 13:00 - Ledig tid [asd, tlf: sad, email: asd]
-27-10-2024 14:00 - Ledig tid
-27-10-2024 15:00 - Ledig tid
-27-10-2024 16:00 - Ledig tid
-27-10-2024 17:00 - Ledig tid
 28-10-2024 10:00 - Ledig tid
 28-10-2024 11:00 - Ledig tid
 28-10-2024 12:00 - Ledig tid
@@ -39,10 +7,10 @@
 28-10-2024 16:00 - Ledig tid
 28-10-2024 17:00 - Ledig tid
 29-10-2024 10:00 - Ledig tid
-29-10-2024 11:00 - Ledig tid [lkm, tlf: 222, email: sad]
+29-10-2024 11:00 - Ledig tid
 29-10-2024 12:00 - Ledig tid
-29-10-2024 13:00 - Ledig tid    [Charlie, tlf: 2222222, email: Test@gmail.com]
-29-10-2024 14:00 - test tid [Gustav, tlf: 2222323, email: Test2@gmail.com]
+29-10-2024 13:00 - Ledig tid
+29-10-2024 14:00 - Ledig tid
 29-10-2024 15:00 - Ledig tid
 29-10-2024 16:00 - Ledig tid
 29-10-2024 17:00 - Ledig tid
@@ -64,28 +32,28 @@
 31-10-2024 17:00 - Ledig tid
 01-11-2024 10:00 - Ledig tid
 01-11-2024 11:00 - Ledig tid
-01-11-2024 12:00 - Ledig tid    [asd, tlf: 222, email: @@@@]
+01-11-2024 12:00 - Ledig tid
 01-11-2024 13:00 - Ledig tid
-01-11-2024 14:00 - Ledig tid    [Jimmi Henrix, tlf: 12345678, email: Jimmi@gmail.com]
+01-11-2024 14:00 - Ledig tid
 01-11-2024 15:00 - Ledig tid
-01-11-2024 16:00 - Booket
+01-11-2024 16:00 - Ledig tid
 01-11-2024 17:00 - Ledig tid
-02-11-2024 10:00 - Ledig tid
-02-11-2024 11:00 - Ledig tid    [asd, tlf: 2222, email: @@@]
-02-11-2024 12:00 - Ledig tid
-02-11-2024 13:00 - Ledig tid
-02-11-2024 14:00 - Ledig tid
-02-11-2024 15:00 - Ledig tid
-02-11-2024 16:00 - Ledig tid
-02-11-2024 17:00 - Ledig tid
-03-11-2024 10:00 - Ledig tid
-03-11-2024 11:00 - Ledig tid    [sad, tlf: 23, email: ds]
-03-11-2024 12:00 - Ledig tid
-03-11-2024 13:00 - Ledig tid
-03-11-2024 14:00 - Ledig tid
-03-11-2024 15:00 - Ledig tid
-03-11-2024 16:00 - Ledig tid
-03-11-2024 17:00 - Booket
+02-11-2024 10:00 - Weekend
+02-11-2024 11:00 - Weekend
+02-11-2024 12:00 - Weekend
+02-11-2024 13:00 - Weekend
+02-11-2024 14:00 - Weekend
+02-11-2024 15:00 - Weekend
+02-11-2024 16:00 - Weekend
+02-11-2024 17:00 - Weekend
+03-11-2024 10:00 - Weekend
+03-11-2024 11:00 - Weekend
+03-11-2024 12:00 - Weekend
+03-11-2024 13:00 - Weekend
+03-11-2024 14:00 - Weekend
+03-11-2024 15:00 - Weekend
+03-11-2024 16:00 - Weekend
+03-11-2024 17:00 - Weekend
 04-11-2024 10:00 - Ledig tid
 04-11-2024 11:00 - Ledig tid
 04-11-2024 12:00 - Ledig tid
@@ -96,7 +64,7 @@
 04-11-2024 17:00 - Ledig tid
 05-11-2024 10:00 - Ledig tid
 05-11-2024 11:00 - Ledig tid
-05-11-2024 12:00 - Ledig tid    [asd, tlf: 2222, email: adsa]
+05-11-2024 12:00 - Ledig tid
 05-11-2024 13:00 - Ledig tid
 05-11-2024 14:00 - Ledig tid
 05-11-2024 15:00 - Ledig tid
@@ -110,3 +78,35 @@
 06-11-2024 15:00 - Ledig tid
 06-11-2024 16:00 - Ledig tid
 06-11-2024 17:00 - Ledig tid
+07-11-2024 10:00 - Ledig tid
+07-11-2024 11:00 - Ledig tid
+07-11-2024 12:00 - Ledig tid
+07-11-2024 13:00 - Ledig tid
+07-11-2024 14:00 - Ledig tid
+07-11-2024 15:00 - Ledig tid
+07-11-2024 16:00 - Ledig tid
+07-11-2024 17:00 - Ledig tid
+08-11-2024 10:00 - Ledig tid
+08-11-2024 11:00 - Ledig tid
+08-11-2024 12:00 - Ledig tid
+08-11-2024 13:00 - Ledig tid
+08-11-2024 14:00 - Ledig tid
+08-11-2024 15:00 - Ledig tid
+08-11-2024 16:00 - Ledig tid
+08-11-2024 17:00 - Ledig tid
+09-11-2024 10:00 - Weekend
+09-11-2024 11:00 - Weekend
+09-11-2024 12:00 - Weekend
+09-11-2024 13:00 - Weekend
+09-11-2024 14:00 - Weekend
+09-11-2024 15:00 - Weekend
+09-11-2024 16:00 - Weekend
+09-11-2024 17:00 - Weekend
+10-11-2024 10:00 - Weekend
+10-11-2024 11:00 - Weekend
+10-11-2024 12:00 - Weekend
+10-11-2024 13:00 - Weekend
+10-11-2024 14:00 - Weekend
+10-11-2024 15:00 - Weekend
+10-11-2024 16:00 - Weekend
+10-11-2024 17:00 - Weekend
