@@ -8,7 +8,7 @@ import java.util.stream.Collectors;
 
 public class SletningAfBooking {
     private static final String filnavn = "src/appointments.txt";  // Navn på filen
-    private static final String booket = "Booket af";    // Tekst for ledig tid
+    private static final String booket = "Booket";    // Tekst for ledig tid
 
     public static void sletEnTid( String[] args){
         try {
