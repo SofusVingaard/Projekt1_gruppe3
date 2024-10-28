@@ -8,7 +8,7 @@ import java.util.stream.Collectors;
 
 public class SletningAfBooking {
     private static final String filnavn = "src/appointments.txt";  // Navn på filen
-    private static final String booket = "Booket";    // Tekst for ledig tid
+    private static final String booket = "Booket af";    // Tekst for ledig tid
 
     public static void sletEnTid( String[] args){
         try {
@@ -45,12 +45,12 @@ public class SletningAfBooking {
             }
 
             String valgtTid = tiderPåDato.get(valg - 1);
-            String navn=" ";
-            String telefon=" ";
-            String email=" ";
+            String navn="";
+            String telefon="";
+            String email="";
 
             String kundedata = "Ledig tid" +navn+telefon+email;
-            String opdateretTid = valgtTid.replace(booket, kundedata);
+            String opdateretTid = valgtTid.replaceAll("Booket af.*", "Ledig tid");
             linjer.set(linjer.indexOf(valgtTid), opdateretTid);
 
 
@@ -68,6 +68,6 @@ public class SletningAfBooking {
     }
 
     public static void main(String[] args) {
-        TestingAfMain.sletEnTid(args);
+        SletningAfBooking.sletEnTid(args);
     }
 }
