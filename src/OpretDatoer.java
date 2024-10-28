@@ -1,8 +1,12 @@
+import java.io.BufferedReader;
+import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.time.LocalDate;
 import java.time.LocalTime;
 import java.time.format.DateTimeFormatter;
+import java.util.HashSet;
+import java.util.Set;
 
 public class OpretDatoer {
 
@@ -12,6 +16,18 @@ public class OpretDatoer {
     private static final String filnavn = "src/appointments.txt";  // Navn på filen
 
     public static void main(String[] args) {
+        Set<String> eksisterendeDatoer = new HashSet<>();
+
+        // Læs eksisterende datoer fra filen
+        try (BufferedReader reader = new BufferedReader(new FileReader(filnavn))) {
+            String linje;
+            while ((linje = reader.readLine()) != null) {
+                eksisterendeDatoer.add(linje.split(" - ")[0]);  // Gem kun dato og tid
+            }
+        } catch (IOException e) {
+            System.out.println("Fejl under læsning af filen: " + e.getMessage());
+        }
+
         try (FileWriter fileWriter = new FileWriter(filnavn, true)) {  // Åben filen i append-mode
             LocalDate dagsDato = LocalDate.now();  // Hent dags dato
             LocalTime startTid = LocalTime.of(10, 0);  // Starttidspunkt (10:00)
@@ -26,6 +42,11 @@ public class OpretDatoer {
                     String datoTid = dato.format(datoFormatter) + " " + tid.format(tidsFormatter);
                     String besked;
 
+                    // Tjek om datoTid allerede findes
+                    if (eksisterendeDatoer.contains(datoTid)) {
+                        continue; // Hvis datoen allerede findes, spring over den
+                    }
+
                     // Tjek om det er weekend
                     if (dato.getDayOfWeek().getValue() == 6 || dato.getDayOfWeek().getValue() == 7) {
                         besked = "Weekend"; // Kun weekend
@@ -37,7 +58,7 @@ public class OpretDatoer {
                 }
             }
 
-            System.out.println("Datoer og 1-times intervaller er blevet tilføjet til filen: " + filnavn);
+            System.out.println("Nye datoer og 1-times intervaller er blevet tilføjet til filen: " + filnavn);
         } catch (IOException e) {
             System.out.println("Fejl under skrivning til filen: " + e.getMessage());
         }
