@@ -45,12 +45,12 @@ public class SletningAfBooking {
             }
 
             String valgtTid = tiderPåDato.get(valg - 1);
-            String navn=" ";
-            String telefon=" ";
-            String email=" ";
+            String navn="";
+            String telefon="";
+            String email="";
 
             String kundedata = "Ledig tid" +navn+telefon+email;
-            String opdateretTid = valgtTid.replace(booket, kundedata);
+            String opdateretTid = valgtTid.replaceAll("Booket af.*", "Ledig tid");
             linjer.set(linjer.indexOf(valgtTid), opdateretTid);
 
 
