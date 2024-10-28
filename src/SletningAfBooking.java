@@ -68,6 +68,6 @@ public class SletningAfBooking {
     }
 
     public static void main(String[] args) {
-        TestingAfMain.sletEnTid(args);
+        SletningAfBooking.sletEnTid(args);
     }
 }
