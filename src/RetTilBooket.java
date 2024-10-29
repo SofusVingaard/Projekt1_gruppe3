@@ -99,9 +99,42 @@ public class RetTilBooket {
                     System.out.println("Ugyldigt");
                     return;
             }
+            System.out.println("Tilføj produkt til kurv");
+            System.out.println("1. Harriet's Shampoo (79 kr. )");
+            System.out.println("2. Harriet's Conditioner (99 kr. )");
+            System.out.println("3. Harry's Shampoo (49 kr. )");
+            System.out.println("4. Harry's Conditioner (59 kr. )");
+            System.out.println("5. Børste-Buddy (109 kr. )");
+            System.out.println("6. Tast 0 for ingen");
+
+            int addOn = scanner.nextInt();
+            double productCost = 0;
+
+            switch (addOn) {
+                case 1:
+                    productCost = 79;
+                    break;
+                case 2:
+                    productCost = 99;
+                    break;
+                case 3:
+                    productCost = 49;
+                    break;
+                case 4:
+                    productCost = 59;
+                    break;
+                case 5:
+                    productCost = 109;
+                    break;
+                case 0:
+                    productCost = 0;
+                    break;
+                default:
+                    System.out.println("Ugyldigt");
+            }
 
             // Opret kundedata-strengen
-            String kundedata = "Booket af [" + navn + ", tlf: " + telefon + ", email: " + email +" "+ serviceCost+" kr]";
+            String kundedata = "Booket af [" + navn + ", tlf: " + telefon + ", email: " + email +" "+ (serviceCost+productCost)+" kr]";
 
             // Erstat "Ledig tid" med kundedata i den valgte linje
             String opdateretTid = valgtTid.replace(Ledige, kundedata);
