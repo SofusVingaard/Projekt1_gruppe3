@@ -27,7 +27,7 @@ public class Kunde {
             System.out.println("pres 3 for at booke en tid");
 
             int bruger=keyboard.nextInt();
-            Booking book = new Booking();
+            //Booking book = new Booking();
 
             switch (bruger) {
                 case 1: {

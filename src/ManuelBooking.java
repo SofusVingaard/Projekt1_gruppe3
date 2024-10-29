@@ -5,7 +5,8 @@ import java.time.format.DateTimeFormatter;
 import java.util.Scanner;
 
 
-public class ManuelBooking {
+
+//public class ManuelBooking { BLEVET SAT PÅ PAUSE INDTIL I MORGEN EFTER TEAMS MØDE
     //DatatTimerFormatter til at oprette datoerne
     private static final DateTimeFormatter Dataformatter = DateTimeFormatter.ofPattern("dd-MM-yyyy");
 

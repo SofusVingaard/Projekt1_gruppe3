@@ -1,18 +1,142 @@
-28-10-2024 10:00 - Ledig tid
+Booking dato: 04-05-2025
+Booking dato: 02-03-2025
+Booking dato: 01-12-2024
+Booking dato: 02-05-2025
+Booking dato: 12-02-2000
+Feriedag: 25-01-2025
+Feriedag: 24-12-2024
+Feriedag: 20-05-2025
+Feriedag: 12-03-2026
+Manuel Booking dato: 31-12-2027
+Booking dato: 12-02-2025
+Manuel Booking dato: 31-12-2027
+28-10-2024 10:00 - Booket af [emi, tlf: e, email: e 200.0 kr]
+28-10-2024 11:00 - Ledig tid
+28-10-2024 12:00 - Ledig tid
+28-10-2024 13:00 - Ledig tid
+28-10-2024 14:00 - Ledig tid
+28-10-2024 15:00 - Bogført [Emir, tlf: 53811903, email: Emirkn]
+28-10-2024 16:00 - Ledig tid
+28-10-2024 17:00 - Ledig tid
+29-10-2024 10:00 - Ledig tid
+29-10-2024 11:00 - Ledig tid
+29-10-2024 12:00 - Ledig tid
+29-10-2024 13:00 - Ledig tid
+29-10-2024 14:00 - Ledig tid
+29-10-2024 15:00 - Ledig tid
+29-10-2024 16:00 - Ledig tid
+29-10-2024 17:00 - Ledig tid
+30-10-2024 10:00 - Ledig tid
+30-10-2024 11:00 - Ledig tid
+30-10-2024 12:00 - Ledig tid
+30-10-2024 13:00 - Ledig tid
+30-10-2024 14:00 - Ledig tid
+30-10-2024 15:00 - Ledig tid
+30-10-2024 16:00 - Ledig tid
+30-10-2024 17:00 - Ledig tid
+31-10-2024 10:00 - Ledig tid
+31-10-2024 11:00 - Ledig tid
+31-10-2024 12:00 - Ledig tid
+31-10-2024 13:00 - Ledig tid
+31-10-2024 14:00 - Ledig tid
+31-10-2024 15:00 - Ledig tid
+31-10-2024 16:00 - Ledig tid
+31-10-2024 17:00 - Ledig tid
+01-11-2024 10:00 - Ledig tid
+01-11-2024 11:00 - Ledig tid
+01-11-2024 12:00 - Ledig tid
+01-11-2024 13:00 - Ledig tid
+01-11-2024 14:00 - Ledig tid
+01-11-2024 15:00 - Ledig tid
+01-11-2024 16:00 - Ledig tid
+01-11-2024 17:00 - Ledig tid
+02-11-2024 10:00 - Weekend
+02-11-2024 11:00 - Weekend
+02-11-2024 12:00 - Weekend
+02-11-2024 13:00 - Weekend
+02-11-2024 14:00 - Weekend
+02-11-2024 15:00 - Weekend
+02-11-2024 16:00 - Weekend
+02-11-2024 17:00 - Weekend
+03-11-2024 10:00 - Weekend
+03-11-2024 11:00 - Weekend
+03-11-2024 12:00 - Weekend
+03-11-2024 13:00 - Weekend
+03-11-2024 14:00 - Weekend
+03-11-2024 15:00 - Weekend
+03-11-2024 16:00 - Weekend
+03-11-2024 17:00 - Weekend
+04-11-2024 10:00 - Ledig tid
+04-11-2024 11:00 - Ledig tid
+04-11-2024 12:00 - Ledig tid
+04-11-2024 13:00 - Ledig tid
+04-11-2024 14:00 - Ledig tid
+04-11-2024 15:00 - Ledig tid
+04-11-2024 16:00 - Ledig tid
+04-11-2024 17:00 - Ledig tid
+05-11-2024 10:00 - Ledig tid
+05-11-2024 11:00 - Ledig tid
+05-11-2024 12:00 - Ledig tid
+05-11-2024 13:00 - Ledig tid
+05-11-2024 14:00 - Ledig tid
+05-11-2024 15:00 - Ledig tid
+05-11-2024 16:00 - Ledig tid
+05-11-2024 17:00 - Ledig tid
+06-11-2024 10:00 - Ledig tid
+06-11-2024 11:00 - Ledig tid
+06-11-2024 12:00 - Ledig tid
+06-11-2024 13:00 - Ledig tid
+06-11-2024 14:00 - Ledig tid
+06-11-2024 15:00 - Ledig tid
+06-11-2024 16:00 - Ledig tid
+06-11-2024 17:00 - Ledig tid
+07-11-2024 10:00 - Ledig tid
+07-11-2024 11:00 - Ledig tid
+07-11-2024 12:00 - Ledig tid
+07-11-2024 13:00 - Ledig tid
+07-11-2024 14:00 - Ledig tid
+07-11-2024 15:00 - Ledig tid
+07-11-2024 16:00 - Ledig tid
+07-11-2024 17:00 - Ledig tid
+08-11-2024 10:00 - Ledig tid
+08-11-2024 11:00 - Ledig tid
+08-11-2024 12:00 - Ledig tid
+08-11-2024 13:00 - Ledig tid
+08-11-2024 14:00 - Ledig tid
+08-11-2024 15:00 - Ledig tid
+08-11-2024 16:00 - Ledig tid
+08-11-2024 17:00 - Ledig tid
+09-11-2024 10:00 - Weekend
+09-11-2024 11:00 - Weekend
+09-11-2024 12:00 - Weekend
+09-11-2024 13:00 - Weekend
+09-11-2024 14:00 - Weekend
+09-11-2024 15:00 - Weekend
+09-11-2024 16:00 - Weekend
+09-11-2024 17:00 - Weekend
+10-11-2024 10:00 - Weekend
+10-11-2024 11:00 - Weekend
+10-11-2024 12:00 - Weekend
+10-11-2024 13:00 - Weekend
+10-11-2024 14:00 - Weekend
+10-11-2024 15:00 - Weekend
+10-11-2024 16:00 - Weekend
+10-11-2024 17:00 - Weekend
+28-10-2024 10:00 - Bogført [Mj, tlf: 53788, email: mjnh]
 28-10-2024 11:00 - Ledig tid
 28-10-2024 12:00 - Ledig tid
 28-10-2024 13:00 - Ledig tid
 28-10-2024 14:00 - Ledig tid
 28-10-2024 15:00 - Ledig tid
 28-10-2024 16:00 - Ledig tid
-28-10-2024 17:00 - Booket af [Biden, tlf: 112, email: Opps100.0 kr]
-29-10-2024 10:00 - Ledig tid
+28-10-2024 17:00 - Ledig tid
+29-10-2024 10:00 - Bogført [asd, tlf: sad, email: asd 250.0 kr]
 29-10-2024 11:00 - Ledig tid
 29-10-2024 12:00 - Ledig tid
 29-10-2024 13:00 - Ledig tid
-29-10-2024 14:00 - Booket af [Micheal, tlf: 78, email: Mikil 500.0 kr]
-29-10-2024 15:00 - Booket af [Trump, tlf: 69, email: Kamala250.0kr]
-29-10-2024 16:00 - Booket af [SirPoopAlot, tlf: 69, email: Trump]
+29-10-2024 14:00 - Ledig tid
+29-10-2024 15:00 - Ledig tid
+29-10-2024 16:00 - Ledig tid
 29-10-2024 17:00 - Booket af [Mj, tlf: 53788, email: mjnh]
 30-10-2024 10:00 - Ledig tid
 30-10-2024 11:00 - Ledig tid
