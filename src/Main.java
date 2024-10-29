@@ -73,7 +73,7 @@ public class Main {
 
 
 
-                //Derefter
+                //Derefter hvis der bliver tastet andre ting, skal vi sørger for at der ikke kan tastes andet end 1-3.
 
 
              else {
