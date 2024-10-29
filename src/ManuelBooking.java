@@ -4,7 +4,6 @@ import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 import java.util.Scanner;
 
-
 public class ManuelBooking {
     //DatatTimerFormatter til at oprette datoerne
     private static final DateTimeFormatter Dataformatter = DateTimeFormatter.ofPattern("dd-MM-yyyy");

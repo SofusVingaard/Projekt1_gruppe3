@@ -32,7 +32,7 @@ public class SletningAfBooking {
                 System.out.println((i + 1) + ": " + tiderPåDato.get(i));
             }
 
-            System.out.println("Indtast nummeret på den tid, du vil booke:");
+            System.out.println("Indtast nummeret på den tid, du vil slette:");
             int valg = scanner.nextInt();
             scanner.nextLine();  // For at håndtere linjeskift efter nextInt()
 
