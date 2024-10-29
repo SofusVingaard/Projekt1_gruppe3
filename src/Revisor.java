@@ -9,8 +9,9 @@ import java.util.Scanner;
 import java.util.stream.Collectors;
 
 public class Revisor {
-    private static final String filnavn = "src/appointments.txt";  // Navn på filen
-    private static final String booket = "Booket af";    // Tekst for ledig tid
+    private static final String filnavn = "src/appointments.txt";
+    private static final String booket = "Booket af";
+    private static final String bogført= "Bogført";
     private static final DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd-MM-yyyy");
 
     public static void revision(String[] args) {
@@ -18,7 +19,7 @@ public class Revisor {
             List<String> linjer = Files.readAllLines(Paths.get(filnavn));
             Scanner scanner = new Scanner(System.in);
 
-            System.out.println("Indtast dato (dd-mm-yyyy) for at se bookede tider på datoen:");
+            System.out.println("Indtast dato (dd-mm-yyyy) for at se betjente kunder på datoen:");
             String ønsketDatoStr = scanner.nextLine().trim();
 
             LocalDate ønsketDato;
@@ -37,9 +38,9 @@ public class Revisor {
                 return;
             }
 
-            // Filtrer og find tider på datoen
+
             List<String> tiderPåDato = linjer.stream()
-                    .filter(linje -> linje.startsWith(ønsketDatoStr) && linje.contains(booket))
+                    .filter(linje -> linje.startsWith(ønsketDatoStr) && linje.contains(booket) || linje.contains(bogført))
                     .collect(Collectors.toList());
 
             if (tiderPåDato.isEmpty()) {
@@ -52,7 +53,7 @@ public class Revisor {
                 System.out.println((i + 1) + ": " + tiderPåDato.get(i));
             }
 
-            System.out.println("Indtast nummeret på den tid, du vil booke:");
+            System.out.println("Indtast nummeret på den tid, du vil bogføre:");
             int valg = scanner.nextInt();
             scanner.nextLine();  // For at håndtere linjeskift efter nextInt()
 
