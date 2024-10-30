@@ -6,19 +6,20 @@ public class Main {
         Scanner keyboard = new Scanner(System.in);
         int tast;
         String navn;
-        int forkert=0;
+        int forkert=1;
+        int countDown=3;
         boolean keepGoing=true;
+        boolean areWeEvenAlive=true;
 
         while (keepGoing) {
             System.out.println("Velkommen til Harry's Salon ");
             System.out.println("Vores åbningstider er mandag-fredag kl. 10-18");
             System.out.println("Tast 1 for book tid");
-            System.out.println("Tast 2 for slet tid");
-            System.out.println("Tast 3 for opretning af kunde");
-            System.out.println("Tast 4 for login");
+            System.out.println("Tast 2 for login");
             System.out.println("tast 0 for at afslutte");
             tast = keyboard.nextInt();
-
+            //clear vores scanner buffer
+            keyboard.nextLine();
 
             if (tast == 0) {
                 System.out.println("Tak for i dag");
@@ -34,13 +35,7 @@ public class Main {
                 case 1:
                     RetTilBooket.BookEnTid(args);
                     break;
-                    
                 case 2:
-                    SletningAfBooking.sletEnTid(args);
-                    break;
-                case 3:
-                    break;
-                case 4:
                     System.out.println("Indtast Adgangskode ");
                     String adganskode = "hairyharry";
                     Scanner scanner = new Scanner(System.in);
@@ -49,8 +44,9 @@ public class Main {
 
                     //Hvis adgangskoden hairyharry bliver indtastet, så skal den sige godkendt, dog hvis andet end hairyharry bliver indtastet skal den sige forkert adgangskode
                     if (adgangskodeInput.equals(adganskode)) {
+                        areWeEvenAlive=true;
 
-                        while (keepGoing) {
+                        while (areWeEvenAlive) {
                             {
                                 System.out.println("Godkendt");
 
@@ -59,6 +55,7 @@ public class Main {
                                 System.out.println("Tast 1 for Manuel Booking ");
                                 System.out.println("Tast 2 for Sletning af tid ");
                                 System.out.println("Tast 3 for Revisors Stikprøver ");
+                                System.out.println("tast 4 for at logge ud");
                                 System.out.println("Tast 0 for at afslutte");
 
                                 //Vi skal kalde til vores ManuelBooking, SletningAfTider og Revisor klassser så alt kan køre på vores Main
@@ -67,6 +64,7 @@ public class Main {
                                 if (input == 0) {
                                     System.out.println("Tak for i dag");
                                     keepGoing=false;
+                                    areWeEvenAlive=false;
                                 }
 
                                 switch (input) {
@@ -79,6 +77,8 @@ public class Main {
                                     case 3:
                                         Revisor.revision(args);
                                         break;
+                                    case 4:
+                                        areWeEvenAlive=false;
                                 }
 
 
@@ -90,7 +90,8 @@ public class Main {
 
                     } else if (adgangskodeInput !="harryhairy") {
                             forkert++;
-                        System.out.println("ugyldig");
+                            countDown--;
+                        System.out.println("Forkert password, du har: "+countDown+" forsøg tilbage" );
                     }
             
             /*else if (tast == 1) {
