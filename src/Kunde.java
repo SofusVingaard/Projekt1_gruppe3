@@ -1,6 +1,6 @@
 import java.util.ArrayList;
 import java.util.Scanner;
-
+/*
 public class Kunde {
     static String name;
     static int id;
@@ -70,3 +70,5 @@ public class Kunde {
     }
 
 }
+
+ */
