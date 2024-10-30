@@ -6,18 +6,21 @@ public class Main {
         Scanner keyboard = new Scanner(System.in);
         int tast;
         String navn;
-        int forkert=0;
+        int forkert=1;
+        int countDown=3;
         boolean keepGoing=true;
+        boolean areWeTrulyLiving=true;
 
         while (keepGoing) {
             System.out.println("Velkommen til Harry's Salon ");
             System.out.println("Vores åbningstider er mandag-fredag kl. 10-18");
             System.out.println("Tast 1 for book tid");
-            System.out.println("Tast 2 for slet tid");
-            System.out.println("Tast 3 for opretning af kunde");
-            System.out.println("Tast 4 for login");
+            System.out.println("Tast 2 for login");
             System.out.println("tast 0 for at afslutte");
             tast = keyboard.nextInt();
+            //clear vores nextInt buffer så programmet ikke crasher
+            keyboard.nextLine();
+
 
 
             if (tast == 0) {
@@ -34,13 +37,7 @@ public class Main {
                 case 1:
                     RetTilBooket.BookEnTid(args);
                     break;
-                    
                 case 2:
-                    SletningAfBooking.sletEnTid(args);
-                    break;
-                case 3:
-                    break;
-                case 4:
                     System.out.println("Indtast Adgangskode ");
                     String adganskode = "hairyharry";
                     Scanner scanner = new Scanner(System.in);
@@ -49,16 +46,18 @@ public class Main {
 
                     //Hvis adgangskoden hairyharry bliver indtastet, så skal den sige godkendt, dog hvis andet end hairyharry bliver indtastet skal den sige forkert adgangskode
                     if (adgangskodeInput.equals(adganskode)) {
+                        areWeTrulyLiving=true;
 
-                        while (keepGoing) {
+                        while (areWeTrulyLiving) {
                             {
                                 System.out.println("Godkendt");
 
                                 //Så bliver vi sendt over til en ny menu med Admin bruger funktioner
-                                //ManuelBooking, SletningAfTider,Revisor
+                                //ManuelBooking, SletningAfTider, Revisor
                                 System.out.println("Tast 1 for Manuel Booking ");
                                 System.out.println("Tast 2 for Sletning af tid ");
                                 System.out.println("Tast 3 for Revisors Stikprøver ");
+                                System.out.println("tast 4 for at logge ud");
                                 System.out.println("Tast 0 for at afslutte");
 
                                 //Vi skal kalde til vores ManuelBooking, SletningAfTider og Revisor klassser så alt kan køre på vores Main
@@ -67,6 +66,8 @@ public class Main {
                                 if (input == 0) {
                                     System.out.println("Tak for i dag");
                                     keepGoing=false;
+                                    areWeTrulyLiving=false;
+                                    break;
                                 }
 
                                 switch (input) {
@@ -79,21 +80,24 @@ public class Main {
                                     case 3:
                                         Revisor.revision(args);
                                         break;
+                                    case 4:
+                                        System.out.println();
+                                        areWeTrulyLiving=false;
                                 }
-
-
                             }
                         }
                     } else if (forkert==3) {
-                        System.out.println("du har indtastet password forkert for mange gange, politiet er tilkadlt");
+                        System.out.println("du har indtastet password forkert for mange gange, politiet er tilkaldt");
                         keepGoing=false;
 
                     } else if (adgangskodeInput !="harryhairy") {
                             forkert++;
-                        System.out.println("ugyldig");
+                            countDown--;
+                        System.out.println("ugyldig, du har: "+countDown+" forsøg tilbage");
+                        System.out.println();
                     }
             
-            /*else if (tast == 1) {
+            /*else if (tast == 1){
                 RetTilBooket.BookEnTid(args);
 
             } else if (tast == 2) {
