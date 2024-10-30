@@ -9,12 +9,6 @@ public class RetTilBooket {
     private static final String filnavn = "src/appointments.txt";  // Navn på filen
     private static final String Ledige = "Ledig tid";    // Tekst for ledig tid
 
-    int klip1 = 200;
-    int klip2 = 250;
-    int klip3 = 400;
-    int klip4 = 500;
-    int klip5 = 100;
-
     public static void BookEnTid(String[] args) {
         try {
             // Læs alle linjer fra filen

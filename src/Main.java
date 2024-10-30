@@ -19,6 +19,7 @@ public class Main {
             System.out.println("tast 0 for at afslutte");
             tast = keyboard.nextInt();
 
+
             if (tast == 0) {
                 System.out.println("Tak for i dag");
                 keepGoing=false;
