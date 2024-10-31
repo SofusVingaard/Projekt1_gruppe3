@@ -56,7 +56,8 @@ public class Main {
                                 System.out.println("Tast 2 for Sletning af tid ");
                                 System.out.println("Tast 3 for Revisors Stikprøver ");
                                 System.out.println("Tast 4 for at oprette nye ledige tider 14 dage frem");
-                                System.out.println("tast 5 for at logge ud");
+                                System.out.println("tast 5 for at registrere ferie");
+                                System.out.println("tast 6 for at logge ud");
                                 System.out.println("Tast 0 for at afslutte");
 
                                 //Vi skal kalde til vores ManuelBooking, SletningAfTider og Revisor klassser så alt kan køre på vores Main
@@ -86,6 +87,10 @@ public class Main {
                                         System.out.println();
                                         break;
                                     case 5:
+                                        FerieRegistrering.registrerFerie();
+                                        System.out.println();
+                                        break;
+                                    case 6:
                                         System.out.println("du er nu logget ud");
                                         System.out.println();
                                         areWeEvenAlive = false;
