@@ -45,17 +45,19 @@ public class Main {
                     //Hvis adgangskoden hairyharry bliver indtastet, så skal den sige godkendt, dog hvis andet end hairyharry bliver indtastet skal den sige forkert adgangskode
                     if (adgangskodeInput.equals(adganskode)) {
                         areWeEvenAlive = true;
+                        System.out.println("Godkendt");
+                        forkert=1;
+                        countDown=3;
 
                         while (areWeEvenAlive) {
                             {
-                                System.out.println("Godkendt");
-
                                 //Så bliver vi sendt over til en ny menu med Admin bruger funktioner
                                 //ManuelBooking, SletningAfTider,Revisor
                                 System.out.println("Tast 1 for Manuel Booking ");
                                 System.out.println("Tast 2 for Sletning af tid ");
                                 System.out.println("Tast 3 for Revisors Stikprøver ");
-                                System.out.println("tast 4 for at logge ud");
+                                System.out.println("Tast 4 for at oprette nye ledige tider 14 dage frem");
+                                System.out.println("tast 5 for at logge ud");
                                 System.out.println("Tast 0 for at afslutte");
 
                                 //Vi skal kalde til vores ManuelBooking, SletningAfTider og Revisor klassser så alt kan køre på vores Main
@@ -78,6 +80,9 @@ public class Main {
                                         Revisor.revision(args);
                                         break;
                                     case 4:
+                                        OpretDatoer.main(args);
+                                        break;
+                                    case 5:
                                         areWeEvenAlive = false;
                                 }
 
