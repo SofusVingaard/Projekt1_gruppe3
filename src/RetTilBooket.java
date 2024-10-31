@@ -128,7 +128,8 @@ public class RetTilBooket {
             }
 
             // Opret kundedata-strengen
-            String kundedata = "Booket af [" + navn + ", tlf: " + telefon + ", email: " + email +", forventet regning: "+ (serviceCost+productCost)+" kr]";
+            String kundedata = "Booket af [" + navn + ", tlf: " + telefon + ", email: " + email +", regning: "+ (serviceCost+productCost)+" kr]";
+            System.out.println();
 
             // Erstat "Ledig tid" med kundedata i den valgte linje
             String opdateretTid = valgtTid.replace(Ledige, kundedata);
