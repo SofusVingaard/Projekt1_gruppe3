@@ -98,7 +98,7 @@ public class Main {
                             }
                         }
                     } else if (forkert == 3) {
-                        System.out.println("du har indtastet password forkert for mange gange, politiet er tilkadlt");
+                        System.out.println("du har indtastet password forkert for mange gange, politiet er tilkaldt");
                         keepGoing = false;
 
                     } else {
